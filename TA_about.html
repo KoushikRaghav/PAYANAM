@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <br><br><center><b><u><h1 style="color:red;">PAYANAM</u></b></h1></center>
+    <hr><b><marquee style="font-family:Book Antiqua; color: blue"  scrolldelay="1">The Ultimate Bus Ticket Application</marquee></b><hr>
+    <style>
+        #navbar {
+        background-color: #333;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        display:block;
+        transition: top 0.3s;
+        }
+
+        #navbar a {
+        float: left;
+        display: block;
+        color: white ;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        #navbar a:hover {
+        background-color: yellow;
+        color:green;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body bgcolor="GreenYellow">
+    <br><br>
+    <div id="navbar">
+        <div><a href="TA_about.html">HOME</a>
+             <a href="TA_login.html">LOGIN</a>
+             <a href="TA_register.html">REGISTER</a>
+             <a href="TA_feedback.html">FEEDBACK</a><br>
+        </div></div>
+        
+        <div class="w3-display-container" >
+            <img src="bus.gif" style="width:80%">
+        <div class="w3-display-bottomleft w3-container w3-amber w3-hover-#F44336 w3-hide-small"
+             style="color:blue;bottom:10%;opacity:0.7;width:90%">
+            <b><p>"PAYANAM is the world's largest online bus ticket booking service trusted by over 8 million happy customers globally!!<br>
+PAYANAM is a private travel company operating long distance intercity bus services between major towns in the South Indian states of Tamil Nadu, Karnataka, Kerala, Telangana, Andhra Pradesh and Puducherry. <br>PAYANAM is headquartered in Chennai, Tamil Nadu and was founded in 2017 by S.Koushik Raghav and B.Manojkumar.<br>
+The company operates air conditioned and non-AC semi-sleeper services on majority routes with sleeper and 2+2 A/C Volvo B7R multi-axle services on select routes.<br> The company faces competition from other private operators, state transport corporations and Indian Railways."<br></b></p>
+        </div></div>
+
+
+   
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "-50px";
+    } else {
+        document.getElementById("navbar").style.top = "0px";
+    }
+}
+</script>
+</body>
+</html>

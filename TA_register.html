@@ -1,0 +1,97 @@
+<html>
+    
+<head>
+   <title> REGISTER </title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+</head>
+
+<body bgcolor="GreenYellow">
+    <br><br><br>
+    <img src="bus.gif" style="width:25%" align="left">
+    <img src="bus.gif" style="width:25%" align="right">
+    
+    
+<center><b><u><br>
+    <h1 style="color:red;">PAYANAM</h1>
+    </u></b></center>
+
+    <br><hr><marquee style="font-family:Book Antiqua; color: blue"  scrolldelay="10"><i>REGISTRATION FORM</i></marquee><hr>
+    <br>
+      <style>
+        #navbar {
+        background-color: #333;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        display:block;
+        transition: top 0.3s;
+        }
+
+        #navbar a {
+        float: left;
+        display: block;
+        color: white ;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        #navbar a:hover {
+        background-color: yellow;
+        color:green;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <br><br>
+    <div id="navbar">
+        <div><a href="TA_about.html">HOME</a>
+             <a href="TA_login.html">LOGIN</a>
+             <a href="TA_register.html">REGISTER</a>
+             <a href="TA_feedback.html">FEEDBACK</a><br>
+        </div></div>
+    <form name = "myForm" method = "post" action = "TA_register.php" >
+    <p align="justify">
+    <center>
+    Travels Name:<input type = "text" name = "travelsname" size = "30"><br><br>
+             
+    Contact Number:<input type = "text" name = "contactnumber" size = "30" maxlength="10"><br><br>
+     
+    Address:<textarea type = "text" name = "address" rows="5" columns="40">
+            </textarea><br><br>
+       
+    Email Id:<input type = "email" name = "email" size = "30"><br><br>
+    
+    Username : <input type = "text" name = "un" size = "10"><br><br>
+    
+    New Password :<input type= "password" name="npwd" size="10" maxlength="8"><br><br>
+        
+    Confirm Password:<input type= "password" name="cpwd" size="8"><br><br>
+        
+     
+     </p>
+     </center>
+     <center>
+        <input type = "submit" value = "Confirm" style=" height:50px; width:100px"> 
+	
+        <input type = "reset" value = "Clear" style="height:50px; width:100px"> 
+       <br/><br/>
+    </center>
+    
+     </form>
+     <script>
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "-50px";
+    } else {
+        document.getElementById("navbar").style.top = "0px";
+    }
+}
+</script>
+ </body>
+</html>
+ 

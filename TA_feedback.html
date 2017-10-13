@@ -1,0 +1,75 @@
+<html>
+   <head>
+     <title> FEEDBACK </title>
+     
+</head>
+
+<body bgcolor="GreenYellow">
+    <br><br><br>
+    <img src="bus.gif" style="width:25%" align="left">
+    <img src="bus.gif" style="width:25%" align="right">     
+    <br>
+    <center> <b><u>
+        <h1 style="color:red;">PAYANAM</h1>
+    </u></b></center>
+<br>
+   <hr><marquee style="font-family:Book Antiqua; color: blue"  scrolldelay="1"><i><b>YOUR FEEDBACK</b></i></marquee><br><hr>
+   <style>
+        #navbar {
+        background-color: #333;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        display:block;
+        transition: top 0.3s;
+        }
+
+        #navbar a {
+        float: left;
+        display: block;
+        color: white ;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        #navbar a:hover {
+        background-color: yellow;
+        color:green;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <div id="navbar">
+        <div><a href="TA_about.html">HOME</a>
+             <a href="TA_login.html">LOGIN</a>
+             <a href="TA_register.html">REGISTER</a>
+             <a href="TA_feedback.html">FEEDBACK</a><br>
+        </div></div>
+     <form name = "myForm" method = "post" action = "feedback.php">
+<center>
+Name:
+    <input type = "text" name = "name" size = "20">
+    <br><br>
+Your Feedback:
+    <textarea type = "text" name = "feedback" rows="5" columns="70">
+            </textarea>
+    <br><br>
+ <input type = "submit" value = "Submit" style="height:50px; width:100px"> 
+    <input type = "reset" value = "Clear" style="height:50px; width:100px">
+</center>
+
+    <script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "-50px";
+    } else {
+        document.getElementById("navbar").style.top = "0px";
+    }
+}
+</script> 
+     </body>
+</html>

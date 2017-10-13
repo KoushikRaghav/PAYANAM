@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TRAVEL AGENT</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body bgcolor="GreenYellow">
+    <br><br><br>
+    <img src="bus.gif" style="width:25%" align="left">
+    <img src="bus.gif" style="width:25%" align="right">
+    
+<center><b><u><br>
+    <h1 style="color:red;">PAYANAM</h1>
+    </u></b></center>
+    
+<br>
+    <center>
+        <hr><marquee style="font-family:Book Antiqua; color: blue"  scrolldelay="1"><i><b>WELCOME TO THE PORTAL!!</b></i></marquee><hr>
+    </center>
+      <style>
+        #navbar {
+        background-color: #333;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        display:block;
+        transition: top 0.3s;
+        }
+
+        #navbar a {
+        float: right;
+        display: block;
+        color: white ;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        #navbar a:hover {
+        background-color: yellow;
+        color:green;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <br><br>
+    <div id="navbar">
+        <div><a href="TA_about.html">LOGOUT</a>
+            <a href="TA_home.html">MY ACCOUNT</a>
+            
+        </div></div>
+    <center> <p align="justify">
+    <form name = "myForm" method = "post" action = "TA_insert.html">
+        <input type = "submit" value = "INSERT" style="height:50px; width:100px"><br>
+    </form>
+    <form name = "myForm" method = "post" action = "TA_update.html">
+        <input type = "submit" value = "UPDATE" style="height:50px; width:100px"><br> 
+    </form>
+    <form name = "myForm" method = "post" action = "TA_delete.html">
+    <input type = "submit" value = "DELETE" style="height:50px; width:100px"><br>
+    </form>
+    <form name = "myForm" method = "post" action = "TA_display.html">
+    <input type = "submit" value = "DISPLAY" style="height:50px; width:100px"><br>
+    <br/><br/>
+    </form>
+    </center> </p>
+    <script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "-50px";
+    } else {
+        document.getElementById("navbar").style.top = "0px";
+    }
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,117 @@
+<html>
+   <head>
+     <title> UPDATE </title>
+  </head>
+
+<body bgcolor="GreenYellow">
+    <br><br><br>
+    <img src="bus.gif" style="width:25%" align="left">
+    <img src="bus.gif" style="width:25%" align="right">
+    <br>
+        <center> <b><u>
+        <h1 style="color:red;">PAYANAM</h1>
+        </u></b></center>
+<br>
+   <hr><marquee style="font-family:Book Antiqua; color: blue"  scrolldelay="10"><i><b>UPDATE SCHEDULE</b></i></marquee><hr>
+    <style>
+        #navbar {
+        background-color: #333;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        display: block;
+        transition: top 0.3s;
+        }
+
+        #navbar a {
+        float: right;
+        display: block;
+        color: white ;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        #navbar a:hover {
+        background-color: yellow;
+        color:green;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <div id="navbar">
+        <div><a href="TA_about.html">LOGOUT</a>
+            <a href="TA_home.html">MY ACCOUNT</a>
+            
+        </div></div> 
+   <form name="myForm" method="post" action="TA_update.php">
+        <p align="justify">
+        <center>
+         
+        Enter Schedule ID:<input type = "text" name = "id" size = "30">
+         <br><br>
+     
+        Bus Number:<input type = "text" name = "busnumber" size = "30" maxlength="14">
+        <br><br>
+
+        No of Seats:<input type = "text" name = "seatnumbers" size = "30" maxlength='2'>
+        <br><br>
+
+        AC or NON AC? 
+        <form action="">
+        <input type="radio" name="type" value="AC">AC
+        <input type="radio" name="type" value="Non-AC">Non AC<br><br>
+        </form>
+    
+        From:
+        <select name="from">
+        <option value="SELECT">---SELECT---</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Trichy">Trichy</option>
+        <option value="Tirunelveli">Tirunelveli</option>
+        <option value="Madurai">Madurai</option>
+        </select>
+        <br><br>
+
+        TO:
+        <select name="to">
+        <option value="SELECT">---SELECT---</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Trichy">Trichy</option>
+        <option value="Tirunelveli">Tirunelveli</option>
+        <option value="Madurai">Madurai</option>
+        </select>
+        <br><br>
+
+        DOJ:
+        <input type= "date" name="date">
+        <br><br>
+    
+        Departure Time:
+        <input type = "text" name = "dept" size = "30">
+        <br><br>
+
+        Arrival Time:
+        <input type = "text" name = "arr" size = "30">
+        <br><br>
+        
+   
+        <input type = "submit" value = "Update" style="height:50px; width:100px"> 
+        <input type = "reset" value = "Clear" style="height:50px; width:100px"> 
+        </p></center>
+        </form>
+    <script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "-50px";
+    } else {
+        document.getElementById("navbar").style.top = "0px";
+    }
+}
+</script>
+    
+</body>
+</html>
