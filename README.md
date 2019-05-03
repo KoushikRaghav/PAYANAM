@@ -6,9 +6,9 @@ Our project PAYANAM handles the authentication and verification of appropriate u
 
 This can handle the following:
 
-•	Travel Agent Sign in/Signup
-•	Travel Agent can change password
-•	Travel Agent can add new details 
-•	Travel Agent can modify the records
-•	Travel Agent can search the records
-•	Travel Agent can delete the records 
+ *	Travel Agent Sign in/Signup
+ *	Travel Agent can change password
+ *	Travel Agent can add new details 
+ *	Travel Agent can modify the records
+ *	Travel Agent can search the records
+ *	Travel Agent can delete the records 
